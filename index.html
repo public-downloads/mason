@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+
+<!-- Tells search engines the mods page is the real address, not this one. -->
+<link rel="canonical" href="https://public-downloads.github.io/minecraft-mods/mods">
+
+<!-- Fallback for browsers with JavaScript turned off. -->
+<meta http-equiv="refresh" content="0; url=https://public-downloads.github.io/minecraft-mods/mods">
+
+<script>
+	/* Runs before the meta refresh can fire, and keeps any #section from the
+	   incoming address — the hub links to #cineditor and #mason, and a meta
+	   refresh would drop those. `replace` rather than `href` so pressing Back
+	   on the mods page does not bounce straight back in here. */
+	location.replace("https://public-downloads.github.io/minecraft-mods/mods" + location.search + location.hash);
+</script>
+
+<style>
+	body {
+		margin: 0;
+		min-height: 100vh;
+		display: grid;
+		place-items: center;
+		background: #0d1016;
+		color: #8b94a6;
+		font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	}
+	a { color: #6fb4ff; }
+</style>
+</head>
+<body>
+
+<p>Redirecting to <a href="https://public-downloads.github.io/minecraft-mods/mods">the mods page</a>…</p>
+
+</body>
+</html>
